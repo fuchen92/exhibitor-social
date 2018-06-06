@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+        function resize () {
+    		if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+    			return;
+    		}
+    		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+    	}
+    	resize();
+    	window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="logo">
+                <img class="logo-img" src="css/img/cdts.png">
+            </div>
+            <div class="loginForm">
+                <div class="form-group">
+                    <input id="accountInput" class="form-input account-input" type="text" placeholder="请输入报名时使用的手机号/邮箱登录">
+                </div>
+                <div class="form-group clear">
+                    <input id="valicodeInput" class="form-input valicode-input lt" type="text" maxlength="6" placeholder="输入验证码">
+                    <button id="getValicode" class="btn btn-small getValicode rt">获取验证码</button>
+                </div>
+                <div class="form-group">
+                    <p id="formTips" class="form-tips">手机号码不正确</p>
+                </div>
+                <div class="form-group">
+                    <button id="loginBtn" class="btn btn-large login-btn">登录</button>
+                    <p id="cantLogin" class="cant-login">
+                        无法登录
+                        <span class="question-caret">?</span>
+                    </p>
+                </div>
+            </div>
+            <div class="terms">
+                <label class="term-label">
+                    <input id="termInput" class="term-input" type="checkbox" checked>
+                    <i></i>
+                    我已阅读并同意
+                </label>
+                <p class="agree-term">
+                    <span class="term-link">《环球旅讯服务条款》</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="cantloginDialog" class="cantloginDialog">
+        <div class="dialog-bg"></div>
+        <div class="cantloginContent">
+            <h3 class="cantloginTitle">无法登录？</h3>
+            <p class="cantloginTip">请使用报名时填写的手机号/邮箱登录</p>
+            <p class="telTip">如无法登录<br>请致电<span>020-2889757</span></p>
+            <button id="closeDialog" class="closeDialog">我知道了</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
