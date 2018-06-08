@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>首页</title>
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    哈哈哈
+</body>
+</html>

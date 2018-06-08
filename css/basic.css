@@ -1,0 +1,55 @@
+html, body, header, section, aside, footer, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: "微软雅黑", Arial, "Microsoft Yahei";
+    background-color: #F8F8F8;
+    font-size: 14px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    display: block;
+    border: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+input, button, textarea, select {
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 2px;
+    font-family: Arial, "Microsoft Yahei";
+}
+button:disabled {
+    background-color: #B4B4B4;
+    cursor: not-allowed;
+}
+input:focus, select:focus, textarea:focus {
+    border-bottom: 1px solid #565656;
+    border-radius: 0;
+}
+.lt {
+    float: left;
+}
+.rt {
+    float: right;
+}
+.clear::after {
+    display: block;
+    content: "";
+    clear: both;
+}
