@@ -3,9 +3,11 @@ html, body, header, section, aside, footer, div, p, h1, h2, h3, h4, h5, h6, ul, 
     padding: 0;
 }
 html, body {
+    width: 100%;
+    height: 100%;
     font-family: "微软雅黑", Arial, "Microsoft Yahei";
-    background-color: #F8F8F8;
-    font-size: 14px;
+    font-size: 16px;
+    color: #666666;
 }
 a {
     display: inline-block;
@@ -17,11 +19,6 @@ img {
 }
 ul, ol, li {
     list-style: none;
-}
-.container {
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
 }
 input, button, textarea, select {
     box-sizing: border-box;
@@ -42,6 +39,11 @@ input:focus, select:focus, textarea:focus {
     border-bottom: 1px solid #565656;
     border-radius: 0;
 }
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .lt {
     float: left;
 }
@@ -52,4 +54,341 @@ input:focus, select:focus, textarea:focus {
     display: block;
     content: "";
     clear: both;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /*min-width: 1366px;*/
+    overflow: hidden;
+    position: relative;
+}
+
+/***** 侧边主目录栏 *****/
+.siderbar-menu {
+    width: 15%;
+    height: 100%;
+    background-color: #f5f5f5;
+    position: relative;
+}
+.siderbar-menu > .container {
+    width: 100%;
+    height: 100%;
+}
+.profile-entrance {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 25px auto;
+    background-color: #fff;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu-container {
+    margin-bottom: 30px;
+}
+.menu-item, .sign-out {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+/* .menu-item:hover {
+    background-color: #f8f8f8;
+} */
+.menu-item-container {
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: left;
+}
+.menu-link {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    background-size: 20px;
+    color: #666666;
+    padding-left: 35px;
+}
+.menu-link.active {
+    color: #c30d23;
+}
+.menu-guests {
+    background-image: url(img/guests.png);
+}
+.menu-guests.active {
+    background-image: url(img/guests2.png);
+}
+.menu-exhibitor {
+    background-image: url(img/exhibitor.png);
+}
+.menu-exhibitor.active {
+    background-image: url(img/exhibitor2.png);
+}
+.menu-meeting {
+    background-image: url(img/meeting.png);
+}
+.menu-meeting.active {
+    background-image: url(img/meeting2.png);
+}
+.menu-about {
+    background-image: url(img/user.png);
+}
+.menu-about.active {
+    background-image: url(img/user2.png);
+}
+
+/***** 中间名录列表栏 *****/
+.users {
+    width: 35%;
+    height: 100%;
+    background-color: #FBFBFB;
+    position: relative;
+}
+.users-tab {
+    box-sizing: border-box;
+    height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.search-switch, .filter-switch {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.search-switch {
+    background: url(img/icon-search.png) center no-repeat;
+}
+.tab-item {
+    display: inline-block;
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.tab-item.active {
+    color: #c30d23;
+    border-bottom-color: #c30d23;
+}
+    /** 嘉宾默认列表和收藏列表 **/
+.userList {
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+}
+
+.userList-item {
+    position: relative;
+    height: 100%;
+    display: none;
+}
+.userList-item.active {
+    display: block;
+}
+.letter-nav {
+    position: absolute;
+    width: 20px;
+    top: 30px;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+.letter-item {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #328bc7;
+    font-size: 12px;
+}
+.user-list-container {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.letter-divide {
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5%;
+    font-weight: normal;
+}
+.user-item {
+    padding: 15px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.user-item:last-child {
+    border-bottom: 0;
+}
+.user-photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.user-photo > img {
+    width: 100%;
+    border-radius: 50%;
+}
+.user-intro {
+    width: -webkit-calc(100% - 60px);
+    width: -moz-calc(100% - 60px);
+    overflow: hidden;
+}
+.user-name, .user-job, .user-company {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user-name {
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+}
+.user-job, .user-company {
+    font-size: 14px;
+}
+.arrow {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.arrow::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    border-left-color: #B3B3B3;
+    border-bottom-color: #B3B3B3;
+    margin: 5px auto;
+    transform: translateX(-50%) rotate(-45deg);
+}
+.arrow.active::after {
+    transform: translateX(-50%) rotate(135deg);
+}
+.btn-group {
+    text-align: center;
+    margin: 15px 0 10px;
+}
+.arrow + .btn-group {
+    display: none;
+}
+.btn {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-star {
+    margin-right: 10px;
+    background-color: #fff;
+    color: #c30d23;
+    border: 1px solid #c30d23;
+}
+.btn-msg {
+    background-color: #c30d23;
+    color: #fff;
+}
+.btn-cancel {
+    background-color: #EDEDED;
+    color: #A4AAB3;
+    margin-right: 10px;
+}
+.arrow.active + .btn-group {
+    display: block;
+}
+
+/***** 关注权限弹窗 *****/
+.starDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.starDialog-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.starDialog-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 310px;
+    /* height: 155px; */
+    background-color: #fff;
+    box-shadow: 1px 1px 50px rgba(0,0,0,.3);
+}
+.starDialog-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.starDialog-title {
+    box-sizing: border-box;
+    height: 45px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 44px;
+    font-weight: normal;
+}
+.starDialog-desc {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+}
+.closeStarDialog {
+    display: inline-block;
+    height: 30px;
+    margin: 0 auto 20px;
+    padding: 0 15px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #003a8c;
+    color: #fff;
+    cursor: pointer;
+}
+.buy-ticket, .cancelStarDialog {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.buy-ticket {
+    padding: 0 10px;
+    color: #c30d23;
+}
+.cancelStarDialog {
+    background-color: #c30d23;
+    color: #fff;
+    width: 80px;
+    cursor: pointer;
 }
