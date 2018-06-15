@@ -1,0 +1,96 @@
+/***** 筛选 *****/
+.filtertab-item {
+    width: 49%;
+}
+.swiper-slide {
+    height: 200px;
+    overflow: hidden;
+}
+.swiper-slide > img {
+    width: 100%;
+}
+.swiper-pagination-bullet {
+    /* background-color: rgba(195,15,35,0.5); */
+}
+.swiper-pagination-bullet-active {
+    background-color: #C30F23;
+}
+.exhibitor-tag {
+    height: auto;
+    white-space: normal;
+    margin: 5px 0;
+}
+
+/***** 右侧信息栏 *****/
+.infomation-photo, .exhibitor-info {
+    display: inline-block;
+    vertical-align: top;
+}
+.infomation-photo {
+    width: 170px;
+    height: 90px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+}
+.exhibitor-info {
+    width: calc(100% - 185px);
+    width: -webkit-calc(100% - 185px);
+    width: -moz-calc(100% - 185px);
+}
+.exhibitor-name {
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+}
+.exhibitor-info .exhibitor-tag {
+    margin: 15px 0;
+}
+.product-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.product-logo, .product-intro {
+    display: inline-block;
+    vertical-align: top;
+}
+.product-logo {
+    width: 170px;
+    height: 90px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+}
+.product-intro {
+    width: calc(100% - 185px);
+    width: -webkit-calc(100% - 185px);
+    width: -moz-calc(100% - 185px);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.product-item:last-child .product-intro {
+    border-bottom: 0;
+}
+.product-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 20px;
+}
+.product-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+.news-slide {
+    height: auto;
+    text-align: center;
+}
+.news-title {
+    color: #191919;
+    line-height: 20px;
+    margin-top: 15px;
+}
