@@ -1,0 +1,172 @@
+/***** 中间日程/演讲嘉宾栏 *****/
+.program {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background-color: #FBFBFB;
+    overflow: hidden;
+}
+.program-tab {
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 0;
+    text-align: center;
+    background-color: #fff;
+}
+.program-tabitem {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #C30F23;
+    border: 1px solid #C30F23;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.program-tabitem.active {
+    background-color: #C30F23;
+    color: #fff;
+}
+.tabitem-schdule {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tabitem-speaker {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.programList {
+    height: calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: -moz-calc(100% - 50px);
+}
+.programList-item {
+    display: none;
+    height: 100%;
+}
+.programList-item.active {
+    display: block;
+}
+.schduleList {
+    height: 100%;
+}
+.schedule-tab {
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.scheduleList-container {
+    height: calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.schdule-item {
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.schdule-time {
+    width: 60px;
+    color: #191919;
+    font-size: 14px;
+}
+.time-divide {
+    display: block;
+    width: 20px;
+    border-bottom: 2px solid #7D7D7D;
+    margin: 10px 0 10px 10px;
+}
+.schdule-content {
+    width: calc(100% - 65px);
+    width: -webkit-calc(100% - 65px);
+    width: -moz-calc(100% - 65px);
+    height: auto;
+}
+.schdule-title-text {
+    width: calc(100% - 30px);
+    width: -webkit-calc(100% - 30px);
+    width: -moz-calc(100% - 30px);
+    height: auto;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #191919;
+}
+.schdule-add {
+    position: relative;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #C30F23;
+    cursor: pointer;
+}
+.schdule-add::before {
+    position: absolute;
+    content: "+";
+    color: #C30F23;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.schdule-add.active {
+    border-color: #ECECEC;
+    background-color: #ECECEC;
+}
+.schdule-add.active::before {
+    content: "-";
+    color: #898989;
+}
+.speakers {
+    display: none;
+}
+.arrow.active + .speakers {
+    display: block;
+}
+
+
+/***** 演讲嘉宾 *****/
+.speakerList {
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.search-switch {
+    display: block;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #7D7D7D;
+    margin: 10px auto;
+    /* background-image: none; */
+    background: #EFEFEF;
+    border-radius: 20px;
+}
+.search-switch img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* **** 右侧信息栏（演讲嘉宾信息） **** */
+.user-infomation {
+    height: 100%;
+}

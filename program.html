@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/program.css">
+    <title>日程页</title>
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 侧边目录栏 -->
+        <div class="siderbar-menu lt">
+            <div class="container">
+                <div class="profile-entrance"></div>
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-guests" href="index.html">嘉宾</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-exhibitor" href="exhibitor.html">展商</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-program active" href="program.html">会议</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-about" href="about.html">我的</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 中间日程/演讲嘉宾栏 -->
+        <div class="program lt">
+            <div class="program-tab">
+                <span class="program-tabitem tabitem-schdule active">日程</span>
+                <span class="program-tabitem tabitem-speaker">演讲嘉宾</span>
+            </div>
+            <!-- 搜索 -->
+            <div class="search">
+                <div class="search-bar clear">
+                    <span class="back-arrow lt"></span>
+                    <button id="searchBtn" class="btn btn-search rt">搜索</button>
+                    <input id="searchInput" class="search-input" type="text" placeholder="搜索">
+                </div>
+                <ul id="searchList" class="search-list">
+                    <li class="user-item">
+                        <div class="container">
+                            <div class="user-photo lt">
+                                <img src="css/img/user-infomation-photo1.jpg">
+                            </div>
+                            <div class="user-intro lt">
+                                <div class="user-info">
+                                    <h3 class="user-name">Anni Ahnger</h3>
+                                    <p class="user-job">辅助服务销售主管</p>
+                                    <p class="user-company">芬兰航空</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user-item">
+                        <div class="container">
+                            <div class="user-photo lt">
+                                <img src="css/img/user-infomation-photo1.jpg">
+                            </div>
+                            <div class="user-intro lt">
+                                <div class="user-info">
+                                    <h3 class="user-name">Anni Ahnger</h3>
+                                    <p class="user-job">辅助服务销售主管</p>
+                                    <p class="user-company">芬兰航空</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user-item">
+                        <div class="container">
+                            <div class="user-photo lt">
+                                <img src="css/img/user-infomation-photo1.jpg">
+                            </div>
+                            <div class="user-intro lt">
+                                <div class="user-info">
+                                    <h3 class="user-name">Anni Ahnger</h3>
+                                    <p class="user-job">辅助服务销售主管</p>
+                                    <p class="user-company">芬兰航空</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user-item">
+                        <div class="container">
+                            <div class="user-photo lt">
+                                <img src="css/img/user-infomation-photo1.jpg">
+                            </div>
+                            <div class="user-intro lt">
+                                <div class="user-info">
+                                    <h3 class="user-name">Anni Ahnger</h3>
+                                    <p class="user-job">辅助服务销售主管</p>
+                                    <p class="user-company">芬兰航空</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user-item">
+                        <div class="container">
+                            <div class="user-photo lt">
+                                <img src="css/img/user-infomation-photo1.jpg">
+                            </div>
+                            <div class="user-intro lt">
+                                <div class="user-info">
+                                    <h3 class="user-name">Anni Ahnger</h3>
+                                    <p class="user-job">辅助服务销售主管</p>
+                                    <p class="user-company">芬兰航空</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 日程/演讲嘉宾 -->
+            <div class="programList">
+                <!-- 日程 -->
+                <div class="programList-item active">
+                    <div class="schduleList">
+                        <div class="schedule-tab">
+                            <div class="tab-item active">11月16日</div>
+                            <div class="tab-item">11月17日</div>
+                            <div class="tab-item">11月18日</div>
+                        </div>
+                        <div class="scheduleList-container">
+                            <div class="schdule-item">
+                                <div class="container">
+                                    <div class="schdule-time lt">
+                                        <span class="schdule-start">09 : 30</span>
+                                        <b class="time-divide"></b>
+                                        <span class="schdule-end">09 : 50</span>
+                                    </div>
+                                    <div class="schdule-content rt">
+                                        <div class="schdule-title clear">
+                                            <span class="schdule-title-text lt">CEO对话：航司辅助收入，别光想着卖铺营，却连工具都没有</span>
+                                            <span class="schdule-add rt"></span>
+                                        </div>
+                                        <p class="exhibitor-booth">花园层宴会厅</p>
+                                        <div class="arrow"></div>
+                                        <div class="speakers">
+                                            <div class="user-item clear">
+                                                <div class="user-photo lt">
+                                                    <img src="css/img/sunjian.png">
+                                                </div>
+                                                <div class="user-intro lt">
+                                                    <div class="user-info">
+                                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                                        <p class="user-job">大中华区总裁</p>
+                                                        <p class="user-company">Air Black Box</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-item clear">
+                                                <div class="user-photo lt">
+                                                    <img src="css/img/sunjian.png">
+                                                </div>
+                                                <div class="user-intro lt">
+                                                    <div class="user-info">
+                                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                                        <p class="user-job">大中华区总裁</p>
+                                                        <p class="user-company">Air Black Box</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schdule-item">
+                                <div class="container">
+                                    <div class="schdule-time lt">
+                                        <span class="schdule-start">10 : 30</span>
+                                        <b class="time-divide"></b>
+                                        <span class="schdule-end">11 : 00</span>
+                                    </div>
+                                    <div class="schdule-content rt">
+                                        <div class="schdule-title clear">
+                                            <span class="schdule-title-text lt">CEO对话：航司辅助收入，别光想着卖铺营，却连工具都没有</span>
+                                            <span class="schdule-add active rt"></span>
+                                        </div>
+                                        <p class="exhibitor-booth">花园层宴会厅</p>
+                                        <div class="arrow active"></div>
+                                        <div class="speakers">
+                                            <div class="user-item clear">
+                                                <div class="user-photo lt">
+                                                    <img src="css/img/sunjian.png">
+                                                </div>
+                                                <div class="user-intro lt">
+                                                    <div class="user-info">
+                                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                                        <p class="user-job">大中华区总裁</p>
+                                                        <p class="user-company">Air Black Box</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-item clear">
+                                                <div class="user-photo lt">
+                                                    <img src="css/img/sunjian.png">
+                                                </div>
+                                                <div class="user-intro lt">
+                                                    <div class="user-info">
+                                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                                        <p class="user-job">大中华区总裁</p>
+                                                        <p class="user-company">Air Black Box</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schdule-item">
+                                <div class="container">
+                                    <div class="schdule-time lt">
+                                        <span class="schdule-start">10 : 30</span>
+                                        <b class="time-divide"></b>
+                                        <span class="schdule-end">11 : 00</span>
+                                    </div>
+                                    <div class="schdule-content rt">
+                                        <div class="schdule-title clear">
+                                            <span class="schdule-title-text lt">CEO对话：航司辅助收入，别光想着卖铺营，却连工具都没有</span>
+                                            <span class="schdule-add rt"></span>
+                                        </div>
+                                        <p class="exhibitor-booth">花园层宴会厅</p>
+                                        <div class="arrow active"></div>
+                                        <div class="speakers">
+                                            <div class="user-item clear">
+                                                <div class="user-photo lt">
+                                                    <img src="css/img/sunjian.png">
+                                                </div>
+                                                <div class="user-intro lt">
+                                                    <div class="user-info">
+                                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                                        <p class="user-job">大中华区总裁</p>
+                                                        <p class="user-company">Air Black Box</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-item clear">
+                                                <div class="user-photo lt">
+                                                    <img src="css/img/sunjian.png">
+                                                </div>
+                                                <div class="user-intro lt">
+                                                    <div class="user-info">
+                                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                                        <p class="user-job">大中华区总裁</p>
+                                                        <p class="user-company">Air Black Box</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 将来可能有分论坛：预留 -->
+                    <!-- <div class="scheduleList"></div> -->
+                </div>
+                <!-- 演讲嘉宾 -->
+                <div class="programList-item">
+                    <div class="speakerList">
+                        <p class="search-switch">
+                            <img src="css/img/icon-search.png">
+                            搜索姓名/公司
+                        </p>
+                        <div class="user-item clear">
+                            <div class="container">
+                                <div class="user-photo lt">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="user-intro lt">
+                                    <div class="user-info">
+                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                        <p class="user-job">大中华区总裁</p>
+                                        <p class="user-company">Air Black Box</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-item clear">
+                            <div class="container">
+                                <div class="user-photo lt">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="user-intro lt">
+                                    <div class="user-info">
+                                        <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                                        <p class="user-job">大中华区总裁</p>
+                                        <p class="user-company">Air Black Box</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 侧边信息栏 -->
+        <div class="siderbar-infos lt">
+            <!-- 手机端固定在顶部的收藏条 -->
+            <div class="m-star-bar">
+                <span class="back-arrow close-info lt"></span>
+                <!-- <span class="star star-attends rt"></span> -->
+            </div>
+            <div class="user-infomation">
+                <div class="infomation-list">
+                    <div class="infomation-item photo-item">
+                            <div class="photo-item-bg">
+                            <img src="css/img/photo-bg.png">
+                        </div>                        
+                        <div class="infomation-photo">
+                            <img class="photo-img" src="css/img/default-photo.png">
+                            <!-- <div class="user-attribute">
+                                <img class="user-sex" src="css/img/icon-male.png">
+                                <span class="user-tag">演讲嘉宾</span>
+                            </div> -->
+                        </div>
+                        <div class="infomation-info">
+                            <h3 class="user-name">Timothy O'Neil-Dunne</h3>
+                            <p class="user-job">航空解决方案中国区总经理兼资深总监</p>
+                            <p class="user-company">Air Black Box</p>
+                            <!-- <p class="user-language">
+                                交流语言<span class="language-tag">EN</span>
+                            </p> -->
+                        </div>
+                    </div>
+                    <div class="infomation-item">
+                        <h3 class="infomation-item-title">个人介绍</h3>
+                        <div class="user-desc">
+                            Timothy O'Neil-Dunne先生是旅游界的资深人士。他是风投公司VaultPAD Ventures的管理合伙人，这是一个专门关注航空旅游的加速器。他目前是Air Black Box的产品负责人，Air Black Box是航空领域中备受赞誉的
+                            Timothy O'Neil-Dunne先生是旅游界的资深人士。他是风投公司VaultPAD Ventures的管理合伙人，这是一个专门关注航空旅游的加速器。他目前是Air Black Box的产品负责人，Air Black Box是航空领域中备受赞誉的
+                        </div>
+                        <div class="arrow expand-desc"></div>
+                    </div>
+                    <div class="infomation-item">
+                        <h3 class="infomation-item-title">参与环节</h3>
+                        <div class="attend-list">
+                            <div class="attend-item">
+                                <h3 class="attend-item-title">主题演讲：由大众定制到预测分析——数字辅助销售的个性对话</h3>
+                                <p class="attend-item-time">10月18日，周三，10:00-10:30</p>
+                                <p class="attend-item-site">花园层宴会厅C</p>
+                            </div>
+                            <div class="attend-item">
+                                <h3 class="attend-item-title">主题演讲：由大众定制到预测分析——数字辅助销售的个性对话</h3>
+                                <p class="attend-item-time">10月18日，周三，10:00-10:30</p>
+                                <p class="attend-item-site">花园层宴会厅C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infomation-item">
+                        <h3 class="infomation-item-title">往期资料</h3>
+                        <div class="past-list">
+                            <div class="past-item">
+                                <div class="past-left">
+                                    <img src="css/img/test.jpg">
+                                </div>
+                                <div class="past-right">
+                                    <h3 class="past-item-category">2018ADC 主题演讲</h3>
+                                    <h4 class="past-item-title">Priceline CEO 谈竞争：看不见的狮子才更可怕</h4>
+                                </div>
+                            </div>
+                            <div class="past-item">
+                                <div class="past-left">
+                                    <img src="css/img/test.jpg">
+                                </div>
+                                <div class="past-right">
+                                    <h3 class="past-item-category">2018ADC 主题演讲</h3>
+                                    <h4 class="past-item-title">Priceline CEO 谈竞争：看不见的狮子才更可怕</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 日程详情 -->
+        <div class="programDetail">
+            
+        </div>
+    </div>
+</body>
+</html>
