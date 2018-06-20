@@ -170,3 +170,210 @@
 .user-infomation {
     height: 100%;
 }
+
+/* **** 日程详情 **** */
+.programDetail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ebeffa;
+}
+.m-back-bar {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 5%;
+    z-index: 20;
+    display: none;
+}
+.programDetail-content {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: calc(100% - 70px);
+    height: -webkit-calc(100% - 70px);
+    height: -moz-calc(100% - 70px); */
+    height: 100%;
+    /* padding-bottom: 70px; */
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.programDetail-content.small {
+    height: calc(100% - 70px);
+    height: -webkit-calc(100% - 70px);
+    height: -moz-calc(100% - 70px);
+}
+.detail-head {
+    height: 150px;
+    overflow: hidden;
+}
+.detail-head > img {
+    width: 100%;
+}
+.program-info {
+    padding: 30px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.program-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #191919;
+}
+.program-time, .program-site {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 25px;
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.program-time {
+    background-image: url(img/icon-time.png);
+    margin-bottom: 5px;
+}
+.program-site {
+    background-image: url(img/icon-site.png);
+}
+.detail-tab {
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.detail-tab .tab-item {
+    width: 32%;
+}
+.detail-item {
+    display: none;
+}
+.detail-item.active {
+    display: block;
+}
+.program-desc {
+    padding: 20px 5%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.speaker-list {
+    padding: 20px 5%;
+    background-color: #fff;
+}
+.speaker-list-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #c30d23;
+}
+.discuss-list {
+    padding: 20px 5%;
+    background-color: #fff
+}
+.discuss-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.discuss-item:last-child {
+    border-bottom: 0;
+}
+.discuss-name {
+    font-size: 12px;
+    color: #7D7D7D;
+}
+.discuss-content {
+    font-size: 15px;
+    color: #191919;
+    margin-top: 5px;
+}
+.discuss-input-container, .question-input-container {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 20px 5%;
+    background-color: #fff;
+}
+.discuss-input, .question-input {
+    box-sizing: border-box;
+    width: calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    height: 30px;
+    border: 1px solid #B4B4B4;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+.btn-discuss, .btn-question {
+    width: 70px;
+    background-color: #C30F23;
+    color: #fff;
+}
+.question-list {
+    padding: 20px 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.question-list:last-child {
+    border-bottom: 0;
+}
+.questioner {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.questioner > img {
+    width: 100%;
+    border-radius: 100%;
+}
+.question-content {
+    width: calc(100% - 70px);
+    width: -webkit-calc(100% - 70px);
+    width: -moz-calc(100% - 70px);
+}
+.questioner-name {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3E3F3F;
+    margin-bottom: 5px;
+}
+.question-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+    margin-bottom: 5px;
+}
+.question-info {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.question-time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #7D7D7D;
+}
+.agree-count {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 25px;
+    /* background-repeat: no-repeat; */
+    /* background-position: left center; */
+    background: url(img/agree.png) left center no-repeat;
+    background-size: auto 20px;
+}
+.agree-count.active {
+    background: url(img/agree-red.png) left center no-repeat;
+    background-size: auto 20px;
+}
