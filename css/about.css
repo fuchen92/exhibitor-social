@@ -1,0 +1,182 @@
+/* **** 我的页面内容 **** */
+.about {
+    width: 85%;
+    height: 100%;
+    background-color: #ebeffa;
+}
+.about-wrapper {
+    width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.top-bg {
+    height: 150px;
+    overflow: hidden;
+    background: url(img/photo-bg.png) left top no-repeat;
+    
+}
+.about-code {
+    width: 90%;
+    margin: 15px auto 0;
+}
+.erweima {
+    color: #fff;
+}
+.erweima-img, .notice-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    margin-right: 5px;
+}
+.notice-link {
+    position: relative;
+}
+.notice-img {
+    margin-right: 0;
+}
+.notice-num {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #E12742;
+    color: #fff;
+    border-radius: 100%;
+}
+.about-card {
+    background-color: #F5F5F5;
+    border-top: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+}
+.about-card-content {
+    box-sizing: border-box;
+    width: 95%;
+    /* height: 200px; */
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: -90px;
+}
+.card-top {
+    margin-bottom: 20px;
+}
+.people-photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.people-photo > img {
+    width: 100%;
+    border-radius: 100%;
+}
+.people-info {
+    width: calc(100% - 220px);
+    width: -webkit-calc(100% - 220px);
+    width: -moz-calc(100% - 220px);
+}
+.people-name, .people-job, .people-company {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.people-name {
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+}
+.people-job, .people-company {
+    font-size: 14px;
+    color: #3E3F3F;
+}
+.people-link {
+    width: 150px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+    color: #7D7D7D;
+}
+.cardtab-item {
+    box-sizing: border-box;
+    width: 33%;
+    text-align: center;
+}
+.card-divide {
+    height: 20px;
+    margin-top: 15px;
+    border-left: 1px solid #7D7D7D;
+}
+.cardtab-item-link {
+    position: relative;
+    font-size: 14px;
+    color: #3E3F3F;
+}
+.cardtab-item-icon {
+    width: 25px;
+    margin: 0 auto 5px;
+}
+.chat-notice {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    background-color: #E12742;
+    color: #fff;
+    border-radius: 100%;
+}
+.about-banner {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.about-banner-img {
+    width: 100%;
+}
+.about-list {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.about-item {
+    height: 40px;
+    padding: 0 5%;
+}
+.about-item-icon {
+    width: 20px;
+    margin-top: 10px;
+}
+.about-link {
+    width: calc(100% - 30px);
+    width: -webkit-calc(100% - 30px);
+    width: -moz-calc(100% - 30px);
+    height: 39px;
+    font-size: 15px;
+    line-height: 39px;
+    color: #191919;
+    border-bottom: 1px solid #F5F5F5;
+}
+.go-arrow {
+    margin-top: 10px;
+}
+.go-arrow::after {
+    transform: rotate(-135deg);
+}

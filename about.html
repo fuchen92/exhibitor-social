@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>我的</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 侧边目录栏 -->
+        <div class="siderbar-menu lt">
+            <div class="container">
+                <div class="profile-entrance"></div>
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-guests" href="index.html">嘉宾</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-exhibitor" href="exhibitor.html">展商</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-program" href="program.html">会议</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-container">
+                            <a class="menu-link menu-about active" href="about.html">我的</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 我的页面内容 -->
+        <div class="about lt">
+            <div class="about-wrapper">
+                <div class="top-bg">
+                    <div class="about-code clear">
+                        <div class="erweima lt">
+                            <img class="erweima-img" src="css/img/erweima.png">
+                            签到码
+                        </div>
+                        <a class="notice-link rt" href="">
+                            <img class="notice-img" src="css/img/message.png">
+                            <b class="notice-num">4</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-content">
+                        <div class="card-top clear">
+                            <div class="people-photo lt">
+                                <img src="css/img/psb.jpg">
+                            </div>
+                            <div class="people-info lt">
+                                <h3 class="people-name">习大大</h3>
+                                <p class="people-job">中华人民共和国国家主席</p>
+                                <p class="people-company">中华人民共和国</p>
+                            </div>
+                            <a class="people-link rt" href="">点击编辑个人资料 &gt;&gt;</a>
+                        </div>
+                        <div class="card-tab clear">
+                            <div class="cardtab-item lt">
+                                <a class="cardtab-item-link" href="">
+                                    <img class="cardtab-item-icon" src="css/img/chat.png">
+                                    <b class="chat-notice">4</b>
+                                    <span class="cardtab-item-text">我的消息</span>
+                                </a>
+                            </div>
+                            <div class="cardtab-item lt clear">
+                                <b class="card-divide lt"></b>
+                                <a class="cardtab-item-link" href="">
+                                    <img class="cardtab-item-icon" src="css/img/collection.png">
+                                    <span class="cardtab-item-text">我的收藏</span>
+                                </a>
+                                <b class="card-divide rt"></b>
+                            </div>
+                            <div class="cardtab-item lt">
+                                <a class="cardtab-item-link" href="">
+                                    <img class="cardtab-item-icon" src="css/img/schdule.png">
+                                    <span class="cardtab-item-text">我的行程</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-banner">
+                    <img class="about-banner-img" src="css/img/about-banner.jpg">
+                </div>
+                <div class="about-list">
+                    <div class="about-item clear">
+                        <img class="about-item-icon lt" src="css/img/question.png">
+                        <a class="about-link rt clear" href="">
+                            我的提问
+                            <b class="arrow go-arrow rt"></b>
+                        </a>
+                    </div>
+                    <div class="about-item clear">
+                        <img class="about-item-icon lt" src="css/img/answer.png">
+                        <a class="about-link rt clear" href="">
+                            我的回答
+                            <b class="arrow go-arrow rt"></b>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-list">
+                    <div class="about-item clear">
+                        <img class="about-item-icon lt" src="css/img/setting.png">
+                        <a class="about-link rt clear" href="">
+                            设置
+                            <b class="arrow go-arrow rt"></b>
+                        </a>
+                    </div>
+                    <div class="about-item clear">
+                        <img class="about-item-icon lt" src="css/img/other-activity.png">
+                        <a class="about-link rt clear" href="">
+                            前往环旅其他活动
+                            <b class="arrow go-arrow rt"></b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
