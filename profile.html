@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>我的资料页</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="profile">
+        <div class="profile-top clear">
+            <a class="back-link lt" href="javascript: history.go(-1);">
+                <span class="back-arrow"></span>
+            </a>
+            <h3 class="profile-title">我的资料</h3>
+        </div>
+        <div class="profile-body">
+            <div class="profile-list">
+                <div class="profile-item photo-item clear">
+                    <div class="profile-photo lt">
+                        <img class="profile-photo-img" src="css/img/psb.jpg">
+                    </div>
+                    <div class="upload-switch clear rt">
+                        <span class="upload-switch-text">修改头像</span>
+                        <span class="arrow go-arrow rt"></span>
+                    </div>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">称谓</span>
+                    <p class="profile-val lt">先生</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">交流语言</span>
+                    <p class="profile-val lt">中文</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+            </div>
+            <div class="profile-list">
+                <div class="profile-item clear">
+                    <span class="profile-label lt">姓名（中文）</span>
+                    <p class="profile-val lt">尼古拉斯 ● 赵四</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">公司简称（中文）</span>
+                    <p class="profile-val lt">没有，快滚</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">职位（中文）</span>
+                    <p class="profile-val lt">灵魂舞者</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">姓名（英文）</span>
+                    <p class="profile-val lt">Monster Zhao</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">公司简称（英文）</span>
+                    <p class="profile-val lt">没有，快滚</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">职位（英文）</span>
+                    <p class="profile-val lt">dancer</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+            </div>
+            <div class="profile-list">
+                <div class="profile-item clear">
+                    <span class="profile-label lt">个人介绍</span>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="personnal-intro-container">
+                    <p class="personal-intro">将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。将在个人详情页显示，完善你的介绍，让沟通更有效。</p>
+                </div>
+            </div>
+            <div class="profile-list">
+                <div class="profile-item clear">
+                    <span class="profile-label lt">所在行业</span>
+                    <p class="profile-val lt">旅游科技</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">职能类别</span>
+                    <p class="profile-val lt">市场/销售</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">感兴趣的展商类别</span>
+                    <p class="profile-val lt">目的地景区</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+            </div>
+            <div class="profile-list">
+                <div class="profile-item clear">
+                    <span class="profile-label lt">手机</span>
+                    <input class="profile-val profile-input" type="text" placeholder="请填写">
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">邮箱</span>
+                    <input class="profile-val profile-input" type="text" value="110@qq.com" placeholder="请填写">
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">微信</span>
+                    <input class="profile-val profile-input" type="text" value="没有，快滚" placeholder="请填写">
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">微博</span>
+                    <input class="profile-val profile-input" type="text" value="没有，快滚" placeholder="请填写">
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">领英</span>
+                    <input class="profile-val profile-input" type="text" value="没有，快滚" placeholder="请填写">
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <div class="profile-item clear">
+                    <span class="profile-label lt">公司官网</span>
+                    <input class="profile-val profile-input" type="text" value="www.google.com" placeholder="请填写">
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+            </div>
+            <div class="save">
+                <button class="btn btn-save">保存</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
