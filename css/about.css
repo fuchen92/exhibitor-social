@@ -23,10 +23,10 @@
     width: 90%;
     margin: 15px auto 0;
 }
-.erweima {
+.erweima-link {
     color: #fff;
 }
-.erweima-img, .notice-img {
+.erweima-link-icon, .notice-img {
     display: inline-block;
     vertical-align: middle;
     width: 25px;

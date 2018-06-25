@@ -1,0 +1,44 @@
+/* **** 我的收藏 **** */
+.star {
+    position: relative;
+    width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+.star-top {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 5%;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.back-link {
+    width: 50px;
+    height: 40px;
+}
+.star-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 40px;
+}
+.star-body {
+    width: 100%;
+    height: calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+}
+.star-tab {
+    box-sizing: border-box;
+    height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+.exhibitor-tag {
+    height: auto;
+    white-space: normal;
+    margin: 5px 0;
+}

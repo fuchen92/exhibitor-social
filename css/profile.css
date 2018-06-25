@@ -1,5 +1,6 @@
 /* **** 我的资料页 **** */
 .profile {
+    position: relative;
     width: 640px;
     height: 100%;
     margin: 0 auto;
@@ -134,4 +135,288 @@
     line-height: 40px;
     background-color: #C30F23;
     color: #fff;
+}
+
+/* **** 我的资料页修改栏目 **** */
+.change-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+.change-item.active {
+    display: block;
+}
+.change-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.change-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.change-item-title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+    border-bottom: 1px solid #f5f5f5;
+}
+.change-label {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.change-radio {
+    display: none;
+}
+.change-radio:checked ~ i {
+    width: 5px;
+    height: 10px;
+    border-bottom: 2px solid #C30F23;
+    border-right: 2px solid #C30F23;
+    transform: rotate(45deg);
+    margin-top: 12px;
+}
+.change-radio:checked + span {
+    color: #C30F23;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    font-size: 0;
+    margin: 0;
+    border-top: 1px solid #f5f5f5;
+}
+.btn-cancel, .btn-confirm {
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #fff;
+}
+.btn-cancel {
+    margin-right: 0;
+    border-bottom-left-radius: 10px;
+    border-right: 1px solid #f5f5f5;
+}
+.btn-confirm {
+    color: #C30F23;
+    border-bottom-right-radius: 10px;
+}
+    /* 资料修改 */
+.change-bar {
+    box-sizing: border-box;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 5%;
+    text-align: center;
+    background-color: #fff;
+}
+.change-bar-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 40px;
+}
+.change-item-body {
+    height: calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: -moz-calc(100% - 50px);
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+}
+.change-btn-container {
+    box-sizing: border-box;
+    height: 80px;
+    padding: 20px 5%;
+}
+.btn-submit {
+    width: 100%;
+    background-color: #C30F23;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+}
+    /* 资料修改成功提醒 */
+.successDialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: none;
+}
+.successDialog-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.successDialog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.successDialog-title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: #191919;
+    border-bottom: 1px solid #f5f5f5;
+}
+.successDialog-desc {
+    padding: 20px 5%;
+    font-size: 16px;
+    color: #191919;
+}
+.successDialog-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    color: #C30F23;
+    font-size: 16px;
+    border-top: 1px solid #f5f5f5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+    /* 个人介绍 */
+.change-intro-body {
+    background-color: #f5f5f5;
+}
+.change-intro-input {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    resize: none;
+}
+.change-intro-input:focus {
+    border: 0;
+}
+
+    /* 所在行业，职能类别，感兴趣的展商类别 */
+.industry-bar, .function-bar, .exhibition-bar {
+    margin-bottom: 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.change-industry-body,
+.change-function-body,
+.change-exhibition-body {
+    position: relative;
+    height: calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    background-color: #fff;
+}
+.industry-wrapper,
+.function-wrapper,
+.exhibition-wrapper {
+    width: 100%;
+    height: calc(100% - 80px);
+    height: -webkit-calc(100% - 80px);
+    height: -moz-calc(100% - 80px);
+}
+.industry-category,
+.exhibition-category {
+    width: 120px;
+    height: 100%;
+    background-color: #F2F3F5;
+}
+.industry-tab, .exhibition-tab {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1px solid #EDEDED;
+    cursor: pointer;
+}
+.industry-tab.active,
+.exhibition-tab.active {
+    background-color: #fff;
+}
+.industry-list,
+.exhibition-list {
+    width: calc(100% - 120px);
+    width: -webkit-calc(100% - 120px);
+    width: -moz-calc(100% - 120px);
+    height: 100%;
+}
+.industry-item, .exhibition-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+.industry-item.active,
+.exhibition-item.active {
+    display: block;
+}
+.industry-label,
+.function-label,
+.exhibition-label {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #EDEDED;
+    cursor: pointer;
+}
+.industry-option-text,
+.function-option-text,
+.exhibition-option-text {
+    font-size: 14px;
+    line-height: 20px;
+}
+.industry-checkbox,
+.function-checkbox,
+.exhibition-checkbox {
+    display: none;
+}
+.industry-checkbox + i,
+.function-checkbox + i,
+.exhibition-checkbox + i {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+    border: 1px solid #B5BAC1;
+}
+.industry-checkbox:checked + i::after,
+.function-checkbox:checked + i::after,
+.exhibition-checkbox:checked + i::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    left: 3px;
+    width: 4px;
+    height: 9px;
+    border-right: 2px solid #c30d23;
+    border-bottom: 2px solid #c30d23;
+    transform: rotate(40deg);
 }

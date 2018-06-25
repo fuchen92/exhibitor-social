@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>签到码页面</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/erweima.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="qrcode">
+        <div class="qrcode-top clear">
+            <a class="back-link lt" href="javascript: history.go(-1);">
+                <span class="back-arrow"></span>
+            </a>
+            <h3 class="qrcode-title">签到二维码</h3>
+        </div>
+        <div class="qrcode-body">
+            <div class="qrcode-card">
+                <img class="person-photo" src="css/img/psb.jpg">
+                <h3 class="person-name">习大大</h3>
+                <p class="person-job">中华人民共和国国家主席</p>
+                <p class="person-company">没有，快滚</p>
+                <p class="person-tag">参会嘉宾</p>
+                <img class="qrcode-img" src="css/img/qrcode.png">
+                <p class="qrcode-tip">请出示二维码进行会场签到</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
