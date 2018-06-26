@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>设置页</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="setting">
+        <div class="setting-top clear">
+            <a class="back-link lt" href="javascript: history.go(-1);">
+                <span class="back-arrow"></span>
+            </a>
+            <h3 class="setting-title">设置</h3>
+        </div>
+        <div class="setting-body">
+            <div class="setting-list">
+                <div class="setting-item clear">
+                    <span class="setting-item-text lt">同步接收邮件通知</span>
+                    <label class="setting-label rt">
+                        <input class="setting-checkbox" type="checkbox">
+                        <i></i>
+                    </label>
+                </div>
+                <p class="setting-tip">在您的电子邮箱中接收嘉宾的好友请求、交流信息以及环球旅讯推送的重要通知。</p>
+            </div>
+            <div class="setting-list">
+                <div class="setting-item clear">
+                    <span class="setting-item-text lt">同步接收短信通知</span>
+                    <label class="setting-label rt">
+                        <input class="setting-checkbox" type="checkbox" checked>
+                        <i></i>
+                    </label>
+                </div>
+                <p class="setting-tip">开启后，系统会发送一条短信提醒您有新的好友请求、交流信息以及环球旅讯推送的重要通知。</p>
+            </div>
+            <div class="setting-list">
+                <div class="setting-item clear">
+                    <span class="setting-item-text lt">语言选择</span>
+                    <p class="setting-val lt">中文</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+            </div>
+            <div class="setting-list">
+                <div class="setting-item clear">
+                    <span class="setting-item-text lt">修改登录手机</span>
+                    <p class="setting-val lt">13811101110</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <p class="setting-tip">更改手机号后将会使用新的手机号登录。</p>
+            </div>
+            <div class="setting-list">
+                <div class="setting-item clear">
+                    <span class="setting-item-text lt">修改登录邮箱</span>
+                    <p class="setting-val lt">110@qq.com</p>
+                    <span class="arrow go-arrow rt"></span>
+                </div>
+                <p class="setting-tip">更改邮箱后将会使用新的邮箱登录</p>
+            </div>
+            <a class="login-out" href="login.html">退出登录</a>
+        </div>
+        <div class="change-item change-language">
+            <div class="change-bg"></div>
+            <div class="change-content">
+                <h3 class="change-item-title">语言选择</h3>
+                <label class="change-label clear">
+                    <input class="language-radio change-radio" type="radio" name="language" value="1" checked="">
+                    <span class="change-label-text lt">中文</span>
+                    <i class="rt"></i>
+                </label>
+                <label class="change-label clear">
+                    <input class="language-radio change-radio" type="radio" name="language" value="2">
+                    <span class="change-label-text">English</span>
+                    <i class="rt"></i>
+                </label>
+                <div class="btn-group">
+                    <button class="btn btn-cancel">Cancel</button>
+                    <button class="btn btn-confirm">Ok</button>
+                </div>
+            </div>
+        </div>
+        <div class="change-item change-mobile">
+            <div class="change-bar clear">
+                <span class="back-arrow lt"></span>
+                <h3 class="change-bar-title">个人介绍</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

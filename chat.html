@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>我的消息页面</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-top clear">
+            <a class="back-link lt" href="javascript: history.go(-1);">
+                <span class="back-arrow"></span>
+            </a>
+            <h3 class="chat-title">我的消息</h3>
+        </div>
+        <div class="chat-list">
+            <p class="search-switch">
+                <img src="css/img/icon-search.png">
+                搜索姓名/公司
+            </p>
+            <div class="chat-user clear">
+                <div class="container">
+                    <div class="user-photo lt">
+                        <img src="css/img/psb.jpg">
+                    </div>
+                    <div class="last-content lt">
+                        <h3 class="user-name">Monster Zhao</h3>
+                        <p class="last-message">我跳过的舞，没有人能跳第二遍，包括我自己—尼古拉斯，赵四</p>
+                    </div>
+                    <div class="chat-info clear rt">
+                        <p class="last-time">15:56</p>
+                        <p class="unread-notice rt">99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-user clear">
+                <div class="container">
+                    <div class="user-photo lt">
+                        <img src="css/img/sunjian.png">
+                    </div>
+                    <div class="last-content lt">
+                        <h3 class="user-name">Monster Zhao</h3>
+                        <p class="last-message">如果我猜的没错，你的口袋里还有半斤水泥</p>
+                    </div>
+                    <div class="chat-info clear rt">
+                        <p class="last-time">15:56</p>
+                        <p class="unread-notice rt">...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-user clear">
+                <div class="container">
+                    <div class="user-photo lt">
+                        <img src="css/img/psb.jpg">
+                    </div>
+                    <div class="last-content lt">
+                        <h3 class="user-name">Monster Zhao</h3>
+                        <p class="last-message">我跳过的舞，没有人能跳第二遍，包括我自己—尼古拉斯，赵四</p>
+                    </div>
+                    <div class="chat-info clear rt">
+                        <p class="last-time">15:56</p>
+                        <p class="unread-notice rt">4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 聊天窗口 -->
+        <div class="chat-dialog">
+            <div class="chat-dialog-top clear">
+                <span class="back-arrow lt"></span>
+                <h3 class="chat-people">尼古拉斯 ● 赵四</h3>
+            </div>
+            <div class="chat-body">
+                <div class="chat-body-wrapper">
+                    <div class="container">
+                        <div class="chat-item">
+                            <div class="chat-to-people">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/psb.jpg">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">小伙子，尬舞吗？</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-myself">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">如果我猜的没错，你的口袋里还有半斤水泥。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-to-people">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/psb.jpg">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">我跳过的舞，没有人能跳第二遍，包括我自己。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-myself">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">music。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-to-people">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/psb.jpg">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">小伙子，尬舞吗？</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-myself">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">如果我猜的没错，你的口袋里还有半斤水泥。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-to-people">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/psb.jpg">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">我跳过的舞，没有人能跳第二遍，包括我自己。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-myself">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">music。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-to-people">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/psb.jpg">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">小伙子，尬舞吗？</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-myself">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">如果我猜的没错，你的口袋里还有半斤水泥。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-to-people">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/psb.jpg">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">我跳过的舞，没有人能跳第二遍，包括我自己。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="chat-myself">
+                                <div class="chat-people-photo">
+                                    <img src="css/img/sunjian.png">
+                                </div>
+                                <div class="chat-content">
+                                    <p class="chat-text">music。</p>
+                                    <p class="talk-time">2018-3-1 10:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <div class="container">
+                    <input class="chat-input lt" type="text">
+                    <button class="send-btn rt">发送</button>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索 -->
+        <div class="search">
+            <div class="search-bar clear">
+                <span class="back-arrow lt"></span>
+                <button id="searchBtn" class="btn btn-search rt">搜索</button>
+                <input id="searchInput" class="search-input" type="text" placeholder="搜索">
+            </div>
+            <ul id="searchList" class="search-list">
+                <li class="user-item">
+                    <div class="container">
+                        <div class="user-photo lt">
+                            <img src="css/img/user-infomation-photo1.jpg">
+                        </div>
+                        <div class="user-intro lt">
+                            <div class="user-info">
+                                <h3 class="user-name">Anni Ahnger</h3>
+                                <p class="user-job">辅助服务销售主管</p>
+                                <p class="user-company">芬兰航空</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-item">
+                    <div class="container">
+                        <div class="user-photo lt">
+                            <img src="css/img/user-infomation-photo1.jpg">
+                        </div>
+                        <div class="user-intro lt">
+                            <div class="user-info">
+                                <h3 class="user-name">Anni Ahnger</h3>
+                                <p class="user-job">辅助服务销售主管</p>
+                                <p class="user-company">芬兰航空</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-item">
+                    <div class="container">
+                        <div class="user-photo lt">
+                            <img src="css/img/user-infomation-photo1.jpg">
+                        </div>
+                        <div class="user-intro lt">
+                            <div class="user-info">
+                                <h3 class="user-name">Anni Ahnger</h3>
+                                <p class="user-job">辅助服务销售主管</p>
+                                <p class="user-company">芬兰航空</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-item">
+                    <div class="container">
+                        <div class="user-photo lt">
+                            <img src="css/img/user-infomation-photo1.jpg">
+                        </div>
+                        <div class="user-intro lt">
+                            <div class="user-info">
+                                <h3 class="user-name">Anni Ahnger</h3>
+                                <p class="user-job">辅助服务销售主管</p>
+                                <p class="user-company">芬兰航空</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-item">
+                    <div class="container">
+                        <div class="user-photo lt">
+                            <img src="css/img/user-infomation-photo1.jpg">
+                        </div>
+                        <div class="user-intro lt">
+                            <div class="user-info">
+                                <h3 class="user-name">Anni Ahnger</h3>
+                                <p class="user-job">辅助服务销售主管</p>
+                                <p class="user-company">芬兰航空</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
