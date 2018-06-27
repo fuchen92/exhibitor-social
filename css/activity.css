@@ -1,0 +1,53 @@
+/* **** 选择你参加的活动 **** */
+.activity {
+    position: relative;
+    width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+.choose-text {
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+    margin: 50px 0 20px;
+}
+.activity-item {
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.item-1 {
+    background-color: #7F65AA;
+}
+.item-2 {
+    background-color: #4189C9;
+}
+.item-3 {
+    background-color: #E83D40;
+}
+.item-4 {
+    background-color: #E83D40;
+}
+.activity-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0;
+}
+.activity-img, .activity-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+.activity-img {
+    width: 105px;
+    height: 105px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.activity-title {
+    font-size: 18px;
+    color: #fff;
+}

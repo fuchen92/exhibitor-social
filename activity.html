@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>选择你参加的活动</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="activity">
+        <div class="container">
+            <h3 class="choose-text">请选择你参加的会议</h3>
+            <ul class="activity-list">
+                <li class="activity-item item-1">
+                    <a class="activity-link" href="">
+                        <img class="activity-img" src="css/img/activity-hmc.png">
+                        <span class="activity-title">2018 HMC</span>
+                    </a>
+                </li>
+                <li class="activity-item item-2">
+                    <a class="activity-link" href="">
+                        <img class="activity-img" src="css/img/activity-amc.png">
+                        <span class="activity-title">2018 AMC</span>
+                    </a>
+                </li>
+                <li class="activity-item item-3">
+                    <a class="activity-link" href="">
+                        <img class="activity-img" src="css/img/activity-tdc.png">
+                        <span class="activity-title">2018 TDC</span>
+                    </a>
+                </li>
+                <li class="activity-item item-4">
+                    <a class="activity-link" href="">
+                        <img class="activity-img" src="css/img/activity-cdts.png">
+                        <span class="activity-title">2018 CDTS</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
