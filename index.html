@@ -52,7 +52,7 @@
             </div>
         </div>
         <!-- 中间名录列表栏 -->
-        <div class="users lt">
+        <div id="users" class="users lt">
             <div class="users-tab clear">
                 <span class="search-switch lt"></span>
                 <span class="tab-item active">嘉宾</span>
@@ -60,10 +60,10 @@
                 <span class="filter-switch rt">筛选</span>
             </div>
             <!-- 搜索 -->
-            <div class="search">
+            <div id="search" class="search">
                 <div class="search-bar clear">
-                    <span class="back-arrow lt"></span>
-                    <button id="searchBtn" class="btn btn-search rt">搜索</button>
+                    <span class="back-arrow lt" data-close="search"></span>
+                    <button id="searchBtn" class="btn btn-search rt" data-btn="search">搜索</button>
                     <input id="searchInput" class="search-input" type="text" placeholder="搜索">
                 </div>
                 <ul id="searchList" class="search-list">
@@ -140,7 +140,7 @@
                 </ul>
             </div>
             <!-- 筛选 -->
-            <div class="filter">
+            <div id="filter" class="filter">
                 <div class="filter-tab">
                     <div class="filtertab-item active">
                         <b class="point"></b>
@@ -449,8 +449,8 @@
                         </div>
                     </div>
                     <div class="filter-btn">
-                        <button id="btnReset" class="btn btn-reset">重置</button>
-                        <button id="btnFilter" class="btn btn-filter">完成</button>
+                        <button id="btnReset" class="btn btn-reset" data-btn="filterreset">重置</button>
+                        <button id="btnFilter" class="btn btn-filter" data-btn="filtersubmit">完成</button>
                     </div>
                 </div>
             </div>
@@ -501,29 +501,10 @@
                                                 <p class="user-job">辅助服务销售主管</p>
                                                 <p class="user-company">芬兰航空</p>
                                             </div>
-                                            <div class="arrow active"></div>
+                                            <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-star">收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="user-item">
-                                    <div class="container">
-                                        <div class="user-photo lt">
-                                            <img src="css/img/user-infomation-photo1.jpg">
-                                        </div>
-                                        <div class="user-intro lt">
-                                            <div class="user-info">
-                                                <h3 class="user-name">Anni Ahnger</h3>
-                                                <p class="user-job">辅助服务销售主管</p>
-                                                <p class="user-company">芬兰航空</p>
-                                            </div>
-                                            <div class="arrow active"></div>
-                                            <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-star" data-btn="star">收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -541,8 +522,27 @@
                                             </div>
                                             <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-star">收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-star" data-btn="star">收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user-item">
+                                    <div class="container">
+                                        <div class="user-photo lt">
+                                            <img src="css/img/user-infomation-photo1.jpg">
+                                        </div>
+                                        <div class="user-intro lt">
+                                            <div class="user-info">
+                                                <h3 class="user-name">Anni Ahnger</h3>
+                                                <p class="user-job">辅助服务销售主管</p>
+                                                <p class="user-company">芬兰航空</p>
+                                            </div>
+                                            <div class="arrow"></div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-star" data-btn="star">收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -563,29 +563,10 @@
                                                 <p class="user-job">辅助服务销售主管</p>
                                                 <p class="user-company">芬兰航空</p>
                                             </div>
-                                            <div class="arrow active"></div>
+                                            <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-star">收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="user-item">
-                                    <div class="container">
-                                        <div class="user-photo lt">
-                                            <img src="css/img/user-infomation-photo1.jpg">
-                                        </div>
-                                        <div class="user-intro lt">
-                                            <div class="user-info">
-                                                <h3 class="user-name">Anni Ahnger</h3>
-                                                <p class="user-job">辅助服务销售主管</p>
-                                                <p class="user-company">芬兰航空</p>
-                                            </div>
-                                            <div class="arrow active"></div>
-                                            <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-star" data-btn="star">收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -603,8 +584,27 @@
                                             </div>
                                             <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-star">收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-star" data-btn="star">收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user-item">
+                                    <div class="container">
+                                        <div class="user-photo lt">
+                                            <img src="css/img/user-infomation-photo1.jpg">
+                                        </div>
+                                        <div class="user-intro lt">
+                                            <div class="user-info">
+                                                <h3 class="user-name">Anni Ahnger</h3>
+                                                <p class="user-job">辅助服务销售主管</p>
+                                                <p class="user-company">芬兰航空</p>
+                                            </div>
+                                            <div class="arrow"></div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-star" data-btn="star">收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -658,29 +658,10 @@
                                                 <p class="user-job">辅助服务销售主管</p>
                                                 <p class="user-company">芬兰航空</p>
                                             </div>
-                                            <div class="arrow active"></div>
+                                            <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="user-item">
-                                    <div class="container">
-                                        <div class="user-photo lt">
-                                            <img src="css/img/user-infomation-photo1.jpg">
-                                        </div>
-                                        <div class="user-intro lt">
-                                            <div class="user-info">
-                                                <h3 class="user-name">Anni Ahnger</h3>
-                                                <p class="user-job">辅助服务销售主管</p>
-                                                <p class="user-company">芬兰航空</p>
-                                            </div>
-                                            <div class="arrow active"></div>
-                                            <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-unstar" data-btn="unstar">取消收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -698,8 +679,27 @@
                                             </div>
                                             <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-unstar" data-btn="unstar">取消收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user-item">
+                                    <div class="container">
+                                        <div class="user-photo lt">
+                                            <img src="css/img/user-infomation-photo1.jpg">
+                                        </div>
+                                        <div class="user-intro lt">
+                                            <div class="user-info">
+                                                <h3 class="user-name">Anni Ahnger</h3>
+                                                <p class="user-job">辅助服务销售主管</p>
+                                                <p class="user-company">芬兰航空</p>
+                                            </div>
+                                            <div class="arrow"></div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-unstar" data-btn="unstar">取消收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -720,29 +720,10 @@
                                                 <p class="user-job">辅助服务销售主管</p>
                                                 <p class="user-company">芬兰航空</p>
                                             </div>
-                                            <div class="arrow active"></div>
+                                            <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="user-item">
-                                    <div class="container">
-                                        <div class="user-photo lt">
-                                            <img src="css/img/user-infomation-photo1.jpg">
-                                        </div>
-                                        <div class="user-intro lt">
-                                            <div class="user-info">
-                                                <h3 class="user-name">Anni Ahnger</h3>
-                                                <p class="user-job">辅助服务销售主管</p>
-                                                <p class="user-company">芬兰航空</p>
-                                            </div>
-                                            <div class="arrow active"></div>
-                                            <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-unstar" data-btn="unstar">取消收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -760,8 +741,27 @@
                                             </div>
                                             <div class="arrow"></div>
                                             <div class="btn-group">
-                                                <button class="btn btn-cancel">取消收藏</button>
-                                                <button class="btn btn-msg">发消息</button>
+                                                <button class="btn btn-unstar" data-btn="unstar">取消收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user-item">
+                                    <div class="container">
+                                        <div class="user-photo lt">
+                                            <img src="css/img/user-infomation-photo1.jpg">
+                                        </div>
+                                        <div class="user-intro lt">
+                                            <div class="user-info">
+                                                <h3 class="user-name">Anni Ahnger</h3>
+                                                <p class="user-job">辅助服务销售主管</p>
+                                                <p class="user-company">芬兰航空</p>
+                                            </div>
+                                            <div class="arrow"></div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-unstar" data-btn="unstar">取消收藏</button>
+                                                <button class="btn btn-msg" data-btn="msg">发消息</button>
                                             </div>
                                         </div>
                                     </div>
@@ -773,10 +773,10 @@
             </div>
         </div>
         <!-- 侧边信息栏 -->
-        <div class="siderbar-infos lt">
+        <div id="siderbarinfo" class="siderbar-infos lt">
             <!-- 手机端固定在顶部的收藏条 -->
             <div class="m-star-bar">
-                <span class="back-arrow close-info lt"></span>
+                <span data-close="siderbarinfo" class="back-arrow close-info lt"></span>
                 <span class="star star-attends rt"></span>
                 <h3 class="m-star-bar-title">嘉宾详情</h3>
             </div>

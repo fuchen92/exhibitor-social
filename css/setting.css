@@ -211,3 +211,73 @@
     color: #C30F23;
     border-bottom-right-radius: 10px;
 }
+
+/* **** 修改登录手机 **** */
+.change-bar {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 5%;
+    text-align: center;
+    background-color: #fff;
+}
+.back-arrow {
+    position: relative;
+    width: 15px;
+    height: 40px;
+    cursor: pointer;
+}
+.change-bar-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 40px;
+}
+.change-item-body {
+    box-sizing: border-box;
+    height: calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    padding-top: 50px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+}
+.form-group {
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 0 5%;
+    min-height: 20px;
+}
+.form-input {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.form-input:focus {
+    border: 0;
+    border-bottom: 1px solid #565656;
+}
+.valicode-input {
+    width: 72%;
+}
+.getValicode {
+    width: 25%;
+    height: 40px;
+    background-color: #C30F23;
+    color: #fff;
+}
+.form-tips {
+    color: #C30F23;
+    font-size: 12px;
+    line-height: 20px;
+    display: none;
+}
+.btn-changemobile, .btn-changeemail {
+    display: block;
+    width: 90%;
+    height: 40px;
+    background-color: #C30F23;
+    color: #fff;
+    margin: 50px auto 0;
+}
