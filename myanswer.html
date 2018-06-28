@@ -8,7 +8,7 @@
     <meta name="renderer" content="webkit">
     <title>我的回答</title>
     <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/myanswer.css">
+    <link rel="stylesheet" href="css/answer.css">
     <script>
         function resize () {
             if (document.documentElement.clientWidth > 750) {
@@ -22,17 +22,87 @@
     </script>
 </head>
 <body>
-    <div class="myanswer">
-        <div class="myanswer-top clear">
+    <div class="question">
+        <div class="question-top clear">
             <a class="back-link lt" href="javascript: history.go(-1);">
                 <span class="back-arrow"></span>
             </a>
-            <h3 class="myanswer-title">我的回答</h3>
+            <h3 class="question-title">我的回答</h3>
         </div>
-        <div class="myanswer-body">
-            <div class="myanswer-list">
-                <p class="myanswer-time">5分钟前</p>
-                
+        <div class="question-body">
+            <div class="question-list">
+                <p class="question-time">5分钟前</p>
+                <div class="question-card">
+                    <p class="question-desc clear">
+                        <span class="question-desc-text lt">习大大以下环节向你提问：</span>
+                        <!-- <b class="question-notice rt"></b> -->
+                    </p>
+                    <a class="question-link" href="">航空公司分销——从GDS到OTA, 再到垂直搜索和平台模式，接下来呢？</a>
+                    <p class="question-content">开黑吗？我玩亚索</p>
+                    <p class="to-answer">去回答</p>
+                </div>
+            </div>
+            <div class="question-list">
+                <p class="question-time">5分钟前</p>
+                <div class="question-card">
+                    <p class="question-desc clear">
+                        <span class="question-desc-text lt">习大大以下环节向你提问：</span>
+                        <!-- <b class="question-notice rt"></b> -->
+                    </p>
+                    <a class="question-link" href="">航空公司分销——从GDS到OTA, 再到垂直搜索和平台模式，接下来呢？</a>
+                    <p class="question-content">开黑吗？我玩亚索</p>
+                    <div class="answer-list">
+                        <h3 class="answer-title">我的回复</h3>
+                        <div class="answer-item">
+                            <p class="answer-content">我们希望能打造一个生态系统，用户出行每一个环节我们都要覆盖。</p>
+                            <p class="answer-info clear">
+                                <span class="answer-time lt">10-26 12:00</span>
+                                <!-- <span class="edit rt">编辑</span> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myanswer">
+            <div class="myanswer-top clear">
+                <span class="back-arrow lt"></span>
+                <h3 class="myanswer-title">回复</h3>
+            </div>
+            <div class="myanswer-body">
+                <div class="question-list">
+                    <p class="question-time">5分钟前</p>
+                    <div class="question-card">
+                        <p class="question-desc clear">
+                            <span class="question-desc-text lt">习大大以下环节向你提问：</span>                            
+                        </p>
+                        <a class="question-link" href="">航空公司分销——从GDS到OTA, 再到垂直搜索和平台模式，接下来呢？</a>
+                        <p class="question-content">开黑吗？我玩亚索</p>                        
+                        <div class="answer-list">
+                            <h3 class="answer-title">我的回复</h3>
+                            <div class="answer-item">
+                                <p class="answer-content">我们希望能打造一个生态系统，用户出行每一个环节我们都要覆盖。</p>
+                                <p class="answer-info clear">
+                                    <span class="answer-time lt">10-26 12:00</span>
+                                    <!-- <span class="edit rt">编辑</span> -->
+                                </p>
+                            </div>
+                            <div class="answer-item">
+                                <p class="answer-content">我们希望能打造一个生态系统，用户出行每一个环节我们都要覆盖。</p>
+                                <p class="answer-info clear">
+                                    <span class="answer-time lt">10-26 12:00</span>
+                                    <!-- <span class="edit rt">编辑</span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="myanswer-input-container">
+                <div class="container">
+                    <textarea class="answer-input lt" type="text" placeholder="回复"></textarea>
+                    <button class="btn btn-answer rt">发送</button>
+                </div>
             </div>
         </div>
     </div>
