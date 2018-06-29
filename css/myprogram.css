@@ -188,7 +188,7 @@
     height: 100%;
     background-color: #f5f5f5;
     z-index: 110;
-    /* display: none; */
+    display: none;
 }
 .program-edit-top {
     box-sizing: border-box;
@@ -281,6 +281,16 @@
     -webkit-overflow-scrolling: touch;
 }
 
+
+.layui-laydate-list>li {
+    width: 50% !important;
+}
+.layui-laydate-list>li:last-child {
+    display: none !important;
+}
+.laydate-time-list ol li {
+    padding-left: 55px !important;
+}
 
 
 @media screen and (max-width: 750px) {
