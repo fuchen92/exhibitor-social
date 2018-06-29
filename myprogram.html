@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>我的行程</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/myprogram.css">
+    <script>
+        function resize () {
+            if (document.documentElement.clientWidth > 750) {
+                document.documentElement.removeAttribute("style");
+                return;
+            }
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        }
+        resize();
+        window.onresize = resize;
+    </script>
+</head>
+<body>
+    <div class="myprogram">
+        <div class="myprogram-top clear">
+            <a class="back-link lt" href="javascript: history.go(-1);">
+                <span class="back-arrow"></span>
+            </a>
+            <h3 class="myprogram-title">我的行程</h3>
+        </div>
+        <div class="myprogram-body">
+            <div class="myprogram-tab">
+                <span class="tab-item active">10月18日</span>
+                <span class="tab-item">10月19日</span>
+            </div>
+            <div class="myprogram-item active">
+                <div class="schdule-item">
+                    <div class="container">
+                        <div class="schdule-time lt">
+                            <span class="schdule-start">09 : 30</span>
+                            <b class="time-divide"></b>
+                            <span class="schdule-end">09 : 50</span>
+                        </div>
+                        <div class="schdule-content lt">
+                            <a class="schdule-title" href="">CEO对话：航司辅助收入，别光想着卖铺营，却连工具都没有</a>
+                            <p class="exhibitor-booth">花园层宴会厅</p>
+                        </div>
+                        <div class="schdule-operate rt">
+                            <div class="operate-item operate-del">
+                                <img class="operate-icon" src="css/img/icon-delete.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schdule-item">
+                    <div class="container">
+                        <div class="schdule-time lt">
+                            <span class="schdule-start">09 : 30</span>
+                            <b class="time-divide"></b>
+                            <span class="schdule-end">09 : 50</span>
+                        </div>
+                        <div class="schdule-content lt">
+                            <a class="schdule-title" href="">展商会面：xxx展商</a>
+                            <p class="exhibitor-booth">花园层宴会厅</p>
+                        </div>
+                        <div class="schdule-operate rt">
+                            <div class="operate-item operate-del">
+                                <img class="operate-icon" src="css/img/icon-delete.png">
+                            </div>
+                            <div class="operate-item operate-edit">
+                                <img class="operate-icon" src="css/img/icon-edit.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="myprogram-item">
+                <div class="schdule-item">
+                    <div class="container">
+                        <div class="schdule-time lt">
+                            <span class="schdule-start">09 : 30</span>
+                            <b class="time-divide"></b>
+                            <span class="schdule-end">09 : 50</span>
+                        </div>
+                        <div class="schdule-content lt">
+                            <a class="schdule-title" href="">CEO对话：航司辅助收入，别光想着卖铺营，却连工具都没有</a>
+                            <p class="exhibitor-booth">花园层宴会厅</p>
+                        </div>
+                        <div class="schdule-operate rt">
+                            <div class="operate-item operate-del">
+                                <img class="operate-icon" src="css/img/icon-delete.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schdule-item">
+                    <div class="container">
+                        <div class="schdule-time lt">
+                            <span class="schdule-start">09 : 30</span>
+                            <b class="time-divide"></b>
+                            <span class="schdule-end">09 : 50</span>
+                        </div>
+                        <div class="schdule-content lt">
+                            <a class="schdule-title" href="">展商会面：xxx展商</a>
+                            <p class="exhibitor-booth">花园层宴会厅</p>
+                        </div>
+                        <div class="schdule-operate rt">
+                            <div class="operate-item operate-del">
+                                <img class="operate-icon" src="css/img/icon-delete.png">
+                            </div>
+                            <div class="operate-item operate-edit">
+                                <img class="operate-icon" src="css/img/icon-edit.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caret-switch"></div>
+        <div class="addprogram-page">
+            <div class="addprogram-content">
+                <a class="addprogram-link" href="program.html">
+                    添加会议日程
+                    <b class="arrow-caret"></b>
+                </a>
+                <div class="addprogram-btn">
+                    添加会面行程
+                    <b class="arrow-caret"></b>
+                </div>
+            </div>
+        </div>
+        <div class="program-edit">
+            <div class="program-edit-top clear">
+                <span class="back-arrow lt"></span>
+                <h3 class="program-edit-title">会面行程</h3>
+            </div>
+            <div class="program-edit-body">
+                <div class="edit-list">
+                    <div class="edit-item">
+                        <span class="edit-label">跟谁见面</span>
+                        <input class="edit-input" type="text">
+                    </div>
+                    <div class="edit-item">
+                        <span class="edit-label">在哪见面</span>
+                        <input class="edit-input" type="text">
+                    </div>
+                </div>
+                <div class="edit-list time-list clear">
+                    <div class="edit-item clear">
+                        <span class="edit-label">开始</span>
+                        <!-- <input id="timeStart" class="edit-input time-input time-start" type="datetime-local"> -->
+                        <p id="startDate" class="edit-input time-input lt">
+                        <p id="startTime" class="edit-input time-input rt">
+                    </div>
+                    <div class="edit-item clear">
+                        <span class="edit-label">结束</span>
+                        <!-- <input id="timeEnd" class="edit-input time-input time-end" type="datetime-local"> -->
+                        <p id="endDate" class="edit-input time-input lt">
+                        <p id="endTime" class="edit-input time-input rt">
+                    </div>
+                </div>
+                <div class="edit-list">
+                    <div class="remark-item">
+                        <span class="edit-label remark-label">备注</span>
+                        <textarea class="remark-input">要打领带</textarea>
+                    </div>
+                </div>
+                <button id="saveProgram" class="saveProgram">保存</button>
+            </div>
+        </div>
+        <div class="choose-time active">
+
+        </div>
+        <div class="choose-time">
+
+        </div>
+    </div>
+
+    <script src="laydate/laydate.js"></script>
+    <script>
+        laydate.render({
+            elem: "#startDate"
+        })
+        laydate.render({
+            elem: "#startTime",
+            type: "time",
+            format: 'HH:mm'
+        })
+        laydate.render({
+            elem: "#endDate"
+        })
+        laydate.render({
+            elem: "#endTime",
+            type: "time",
+            format: 'HH:mm'
+        })
+    </script>
+</body>
+</html>
